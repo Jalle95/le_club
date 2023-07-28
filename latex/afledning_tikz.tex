@@ -1,0 +1,23 @@
+\begin{tikzpicture}[
+	minimum width=0.2cm, 
+	minimum height=0.2cm
+	]
+\node[draw, fill=red!40] at (0,2) (a1){}; 
+\node[draw, fill=red!40] at (-1,1) (b1){}; 
+\node[draw, fill=red!40] at (-1,-0) (c1){};
+\node[draw, fill=red!40] at (0.2,-0.5) (d1){}; 
+\node[draw, fill=red!40] at (0.3,1) (e1){}; 
+
+\draw[thick, black!30!green] (a1) -- (b1) -- (c1) -- (d1) -- (e1) -- (a1);
+
+\node[draw, fill=red!40] at (3,2) (a1){}; 
+\node[draw, fill=red!40] at (2,1) (b1){}; 
+\node[draw, fill=red!40] at (2.2,0.2) (c1){};
+\node[draw, fill=red!40] at (3.5,-0.5) (d1){}; 
+\node[draw, fill=red!40] at (3.1,1) (e1){}; 
+
+\draw[thick, black!30!green] (a1) -- (b1) -- (c1) -- (d1);
+\draw[thick, black!30!red] (d1) -- (e1) -- (a1);
+
+ 
+\end{tikzpicture}

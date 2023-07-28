@@ -1,0 +1,56 @@
+
+\documentclass[a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\input Sanremo.fd
+\usepackage[
+  top=0.5cm,
+  bottom=0.5cm,
+  left=1cm,
+  right=1cm,
+  headheight=17pt, % as per the warning by fancyhdr
+  includehead,includefoot,
+  heightrounded, % to avoid spurious underfull messages
+]{geometry} 
+
+\usepackage{tikz}
+\usepackage{titlesec}
+\usepackage{multicol}
+\usepackage{caption}
+\newenvironment{Figure}
+  {\par\medskip\noindent\minipage{\linewidth}}
+  {\endminipage\par\medskip}
+\usepackage{fontawesome}
+\newcommand{\LeClub}{{\fontsize{10pt}{10pt}\usefont{U}{Sanremo}{xl}{n}Le\hspace{2pt}Club}}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[R]{}
+\fancyhead[L]{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[R]{Version 1.0.0}
+\usepackage{soul}
+
+\begin{document}
+\begin{multicols*}{2}[
+\begin{center}
+{\fontsize{72pt}{80pt}\usefont{U}{Sanremo}{xl}{n}Le Club}
+\end{center}
+]
+
+Det er torsdag aften. Natten er ung og dig og dine venner har kun et mål for øje... \LeClub s VIP-lounge! Men det er ikke hvem som helst der bliver lukket derop. I skal alle samle nok fame på klubben før i kan fejre jeres bedrift i den ypperste luksus. På vejen skal i passe på både fristelser, dørmænd og selvfølgelig de andre gæster på klubben, der kun tænker det samme som jer: Vi skal i den VIP-lounge!
+\input{hold.tex}
+\input{betaling.tex}
+\input{start.tex}
+\input{zoner.tex}
+\input{fame.tex}
+\input{dormanden.tex}
+\input{chance.tex}
+\input{baren}
+\newpage
+\input{pusheren}
+\input{afledning.tex}
+
+
+\end{multicols*}
+\end{document}

@@ -1,0 +1,60 @@
+\documentclass[6pt]{article}
+\input Sanremo.fd
+\usepackage{tikz}
+\usepackage{titlesec}
+\usepackage{caption}
+\newenvironment{Figure}
+  {\par\medskip\noindent\minipage{\linewidth}}
+  {\endminipage\par\medskip}
+\usepackage{fontawesome}
+\usepackage{hyperref}
+\usepackage{blindtext}
+\usepackage[paperheight=203mm,paperwidth=127mm,top=15mm,bottom=15mm, right=15mm,left=15mm]{geometry}
+\pagenumbering{gobble}
+\usepackage{wallpaper}
+\usepackage{afterpage}
+\usepackage{multicol}
+\usepackage{fontspec}
+\usepackage{fontawesome}
+\usepackage{soul}
+\newcommand{\LeClub}{{\fontsize{10pt}{10pt}Le\hspace{2pt}Club}}
+\ThisTileWallPaper{\paperwidth}{\paperheight}{rulebook_frontpage.png}
+\begin{document}
+\ThisTileWallPaper{\paperwidth}{\paperheight}{rulebook_frontpage.png}
+\ 
+\newpage
+\ThisTileWallPaper{\paperwidth}{\paperheight}{rulebook_page.png}
+
+\begin{center}
+\setmainfont{DiscotequeSt}
+ {\fontsize{40}{40}\selectfont Le Club\\ \fontsize{25}{25}\selectfont \vspace{0.5cm} Regler}
+ %\setmainfont{LinLibertine_R.otf}
+\end{center}
+
+Version 1.0.0. Nyeste regler kan altid findes på LeClub.dk\\
+
+Det er torsdag aften. Natten er ung og dig og dine venner har kun et mål for øje... \LeClub s VIP-lounge! Men det er ikke hvem som helst der bliver lukket derop. I skal alle samle nok fame på klubben før i kan fejre jeres bedrift i den ypperste luksus. På vejen skal i passe på både fristelser, dørmænd og selvfølgelig de andre gæster på klubben, der kun tænker det samme som jer: Vi skal i den VIP-lounge!
+\input{hold.tex}
+\input{betaling.tex}
+\newpage
+\ThisTileWallPaper{\paperwidth}{\paperheight}{rulebook_page.png}
+\input{start.tex}
+\newpage
+\ThisTileWallPaper{\paperwidth}{\paperheight}{rulebook_page.png}
+\ThisTileWallPaper{\paperwidth}{\paperheight}{rulebook_page.png}
+\input{zoner.tex}
+\input{fame.tex}
+\input{dormanden.tex}
+\ThisTileWallPaper{\paperwidth}{\paperheight}{rulebook_page.png}
+\input{chance.tex}
+\ThisTileWallPaper{\paperwidth}{\paperheight}{rulebook_page.png}
+\input{baren}
+\input{pusheren}
+\ThisTileWallPaper{\paperwidth}{\paperheight}{rulebook_page.png}
+\input{afledning.tex}
+\ThisTileWallPaper{\paperwidth}{\paperheight}{rulebook_page.png}
+\newpage
+\ThisTileWallPaper{\paperwidth}{\paperheight}{rulebook_backpage.png}
+\ 
+
+\end{document}
